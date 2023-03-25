@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9A9292">
+
+    <LinearLayout
+        android:id="@+id/liner_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/edt_belgi_nomi"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/image_add"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/image_qoy" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hayvonni rasmini kiriting"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edt_belgi_nomi"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edt_fon"
+        android:hint="Hayvonni ismini kiriting"
+        android:padding="10dp"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@id/edt_belgi_tarifi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/liner_1" />
+
+    <EditText
+        android:id="@+id/edt_belgi_tarifi"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edt_fon"
+        android:gravity="start"
+        android:hint="Hayvonni ma'lumotini yozing"
+        android:padding="10dp"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@id/spinner_turi"
+        app:layout_constraintTop_toBottomOf="@id/edt_belgi_nomi" />
+
+    <Spinner
+        android:id="@+id/spinner_turi"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edt_fon"
+        android:entries="@array/belgi_turi_array"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/edt_belgi_tarifi" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinner_turi" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

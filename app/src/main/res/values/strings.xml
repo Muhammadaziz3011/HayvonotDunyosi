@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">hayvon</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hayvonning_nomi">Hayvonning nomi</string>
+    <string name="hayvonni_toliq_tarifi">Hayvonni toliq tarifi</string>
+    <string name="saqlash">Saqlash</string>
+    <string name="o_chirish">O\'chirish</string>
+    <string name="o_zgartirish">O’zgartirish</string>
+</resources>

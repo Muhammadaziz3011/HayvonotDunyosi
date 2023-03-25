@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowHayvonFragment"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="20dp">
+
+  <ImageView
+      android:layout_width="200dp"
+      android:layout_height="200dp"
+      android:id="@+id/image_show"
+      android:src="@drawable/edt_fon"
+      android:layout_margin="15dp"
+      />
+    
+    <TextView
+        android:textSize="50sp"
+        android:id="@+id/txt_show_nomi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="road sign"
+        android:textColor="@color/black" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:gravity="center"
+            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/txt_about_show"
+            android:text="road sign"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            />
+    </ScrollView>
+
+</LinearLayout>

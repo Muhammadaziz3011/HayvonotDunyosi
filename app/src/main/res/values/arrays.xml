@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="hayvon_turi_array">
+        <item>Yer hayvonlari</item>
+        <item>Suv hayvonlari</item>
+        <item>Hashorotlar</item>
+        <item>MikroJonzodlar</item>
+    </string-array>
+</resources>
